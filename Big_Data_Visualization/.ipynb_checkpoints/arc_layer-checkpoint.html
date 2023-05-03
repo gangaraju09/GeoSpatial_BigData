@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>pydeck</title>
+        <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.13.0/mapbox-gl.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <script src='https://cdn.jsdelivr.net/npm/@deck.gl/jupyter-widget@~8.8.*/dist/index.js'></script>
+    <style>
+    body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#deck-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+#deck-container canvas {
+  z-index: 1;
+  background: none;
+}
+    </style>
+  </head>
+  <body>
+    <div id="deck-container">
+    </div>
+  </body>
+  <script>
+    const container = document.getElementById('deck-container');
+    const jsonInput = {
+  "initialViewState": {
+    "bearing": 45,
+    "latitude": 39,
+    "longitude": -80,
+    "pitch": 50,
+    "zoom": 7
+  },
+  "layers": [
+    {
+      "@@type": "ArcLayer",
+      "autoHighlight": true,
+      "data": [
+        {
+          "date_range": "12/21/20 - 12/27/20",
+          "geoid_d": 51015070800,
+          "geoid_o": 51015070800,
+          "lat_d": 38.21410489283715,
+          "lat_o": 38.21410489283715,
+          "lng_d": -79.19088396487118,
+          "lng_o": -79.19088396487118,
+          "pop_flows": 3752.0,
+          "visitor_flows": 158
+        },
+        {
+          "date_range": "12/21/20 - 12/27/20",
+          "geoid_d": 54075960102,
+          "geoid_o": 54083966100,
+          "lat_d": 38.54571195400858,
+          "lat_o": 38.92961325243861,
+          "lng_d": -79.82663226244824,
+          "lng_o": -79.8526739278368,
+          "pop_flows": 95.0,
+          "visitor_flows": 4
+        },
+        {
+          "date_range": "12/21/20 - 12/27/20",
+          "geoid_d": 54083966400,
+          "geoid_o": 54083966100,
+          "lat_d": 38.84227203236135,
+          "lat_o": 38.92961325243861,
+          "lng_d": -79.84726323306391,
+          "lng_o": -79.8526739278368,
+          "pop_flows": 3877.0,
+          "visitor_flows": 163
+        },
+        {
+          "date_range": "12/21/20 - 12/27/20",
+          "geoid_d": 54083966100,
+          "geoid_o": 54083966100,
+          "lat_d": 38.92961325243861,
+          "lat_o": 38.92961325243861,
+          "lng_d": -79.8526739278368,
+          "lng_o": -79.8526739278368,
+          "pop_flows": 6779.0,
+          "visitor_flows": 285
+        },
+        {
+          "date_range": "12/21/20 - 12/27/20",
+          "geoid_d": 54083966000,
+          "geoid_o": 54083966100,
+          "lat_d": 38.94143704142935,
+          "lat_o": 38.92961325243861,
+          "lng_d": -79.88845247165905,
+          "lng_o": -79.8526739278368,
+          "pop_flows": 2497.0,
+          "visitor_flows": 105
+        },
+        {
+          "date_range": "12/21/20 - 12/27/20",
+          "geoid_d": 54001965800,
+          "geoid_o": 54083966100,
+          "lat_d": 39.0194359862377,
+          "lat_o": 38.92961325243861,
+          "lng_d": -79.92030582876035,
+          "lng_o": -79.8526739278368,
+          "pop_flows": 190.0,
+          "visitor_flows": 8
+        },
+        {
+          "date_range": "12/21/20 - 12/27/20",
+          "geoid_d": 54093965400,
+          "geoid_o": 54083966100,
+          "lat_d": 39.08473745210972,
+          "lat_o": 38.92961325243861,
+          "lng_d": -79.69246789336643,
+          "lng_o": -79.8526739278368,
+          "pop_flows": 118.0,
+          "visitor_flows": 5
+        },
+        {
+          "date_range": "12/21/20 - 12/27/20",
+          "geoid_d": 54083965900,
+          "geoid_o": 54083966100,
+          "lat_d": 38.785800952163896,
+          "lat_o": 38.92961325243861,
+          "lng_d": -80.0669869200867,
+          "lng_o": -79.8526739278368,
+          "pop_flows": 95.0,
+          "visitor_flows": 4
+        },
+        {
+          "date_range": "12/21/20 - 12/27/20",
+          "geoid_d": 54083966200,
+          "geoid_o": 54083966100,
+          "lat_d": 38.96881052009672,
+          "lat_o": 38.92961325243861,
+          "lng_d": -79.81043837671972,
+          "lng_o": -79.8526739278368,
+          "pop_flows": 642.0,
+          "visitor_flows": 27
+        },
+        {
+          "date_range": "12/21/20 - 12/27/20",
+          "geoid_d": 54075960102,
+          "geoid_o": 54075960102,
+          "lat_d": 38.54571195400858,
+          "lat_o": 38.54571195400858,
+          "lng_d": -79.82663226244824,
+          "lng_o": -79.82663226244824,
+          "pop_flows": 1991.0,
+          "visitor_flows": 53
+        },
+        {
+          "date_range": "12/21/20 - 12/27/20",
+          "geoid_d": 54083966400,
+          "geoid_o": 54075960102,
+          "lat_d": 38.84227203236135,
+          "lat_o": 38.54571195400858,
+          "lng_d": -79.84726323306391,
+          "lng_o": -79.82663226244824,
+          "pop_flows": 451.0,
+          "visitor_flows": 12
+        },
+        {
+          "date_range": "12/21/20 - 12/27/20",
+          "geoid_d": 54075960101,
+          "geoid_o": 54075960102,
+          "lat_d": 38.43163512884067,
+          "lat_o": 38.54571195400858,
+          "lng_d": -79.76893525967667,
+          "lng_o": -79.82663226244824,
+          "pop_flows": 300.0,
+          "visitor_flows": 8
+        }
+      ],
+      "getSourceColor": [
+        0,
+        255,
+        0,
+        80
+      ],
+      "getSourcePosition": "@@=[lng_o, lat_o]",
+      "getTargetColor": [
+        255,
+        69,
+        0,
+        80
+      ],
+      "getTargetPosition": "@@=[lng_d, lat_d]",
+      "getTilt": 15,
+      "getWidth": "@@=2",
+      "id": "4bff1e4b-aca3-4cc4-9747-7bba30e887bd",
+      "pickable": true
+    }
+  ],
+  "mapProvider": "carto",
+  "mapStyle": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json",
+  "views": [
+    {
+      "@@type": "MapView",
+      "controller": true
+    }
+  ]
+};
+    const tooltip = {'html': '{visitor_flows} visitors <br /> commuter origin is red; commuter destination is green'};
+    const customLibraries = null;
+    const configuration = null;
+
+    const deckInstance = createDeck({
+                  container,
+      jsonInput,
+      tooltip,
+      customLibraries,
+      configuration
+    });
+
+  </script>
+</html>
