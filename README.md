@@ -22,15 +22,15 @@
 
 Overall, this project demonstrated the effectiveness of geospatial analysis techniques in webscrapping, examining the distribution and clustering of photos taken within a particular area. The combination of geopandas, GeoSeries, Shapely and K-means clustering proved useful for analyzing and visualizing geospatial data.  <p> </ul>
 
-<ul><img src = " https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Vector_processing/images/Orange_county.png?raw=true" ></ul>
+<ul><img src = " https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Vector_processing/images/Orange_county.png" ></ul>
 
-<ul><img src = " https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Vector_processing/images/flickr_image_points.png?raw=true" ></ul>
+<ul><img src = " https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Vector_processing/images/flickr_image_points.png" ></ul>
 
-<ul><img src = " https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Vector_processing/images/no_spatial_within.png?raw=true" ></ul>
+<ul><img src = " https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Vector_processing/images/no_spatial_within.png" ></ul>
 
-<ul><img src = " https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Vector_processing/images/with_spatial_within.png?raw=true" ></ul>
+<ul><img src = " https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Vector_processing/images/with_spatial_within.png" ></ul>
 
-<ul><img src = " https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Vector_processing/images/cluster.png?raw=true" ></ul>
+<ul><img src = " https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Vector_processing/images/cluster.png" ></ul>
 
 </ul>
 
