@@ -22,15 +22,15 @@
 
 Overall, this project demonstrated the effectiveness of geospatial analysis techniques in webscrapping, examining the distribution and clustering of photos taken within a particular area. The combination of geopandas, GeoSeries, Shapely and K-means clustering proved useful for analyzing and visualizing geospatial data.  <p> 
 
-<img src = " https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Vector_processing/images/Orange_county.png?raw=true" alt="">
+<img src = " https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Vector_processing/images/Orange_county.png?raw=true" >
 
-<img src = " https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Vector_processing/images/flickr_image_points.png?raw=true" alt="">
+<img src = " https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Vector_processing/images/flickr_image_points.png?raw=true" >
 
-<img src = " https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Vector_processing/images/no_spatial_within.png?raw=true" alt="">
+<img src = " https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Vector_processing/images/no_spatial_within.png?raw=true" >
 
-<img src = " https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Vector_processing/images/with_spatial_within.png?raw=true" alt="">
+<img src = " https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Vector_processing/images/with_spatial_within.png?raw=true" >
 
-<img src = " https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Vector_processing/images/cluster.png?raw=true" alt="">
+<img src = " https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Vector_processing/images/cluster.png?raw=true" >
 
 </ul>
 
@@ -42,15 +42,15 @@ On the other hand, Earth Engine is a tool designed specifically for analyzing ge
 
 To generate two-period maps of land cover-land use in Dane County using Dynamic World data on Google Earth Engine, I tool the data for the years 2016 and 2022, filtered the data to include only Dane County, visualized parameters to display land cover-land use classes in different colors, created two separate maps, and compare them side by side to identify any changes in land use over the six-year period. This data can inform decision-making processes and future land use planning in the county.
   <p> 
-    <img src = " https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Google_Earth_Engine/output_files/landcover.png?raw=true" alt="">  
+    <img src = " https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Google_Earth_Engine/output_files/landcover.png?raw=true" >  
 
   <p> To analyze the vegetation cover in a study area, I used Landsat 8 remote sensing images and Google Earth Engine to compute the Normalized Difference Vegetation Index (NDVI) values. This involves filtering the data to the time period of interest, calculating NDVI values using Landsat 8 data and the appropriate formula, setting visualization parameters to display NDVI values in different colors, and creating a map of the study area with the NDVI values overlaid on it. This information can help identify areas requiring additional vegetation management or restoration efforts and monitor changes in vegetation cover over time.</p>
 
   <p>To create a Landsat timelapse animation GIF file, I used Google Earth Engine to filter Landsat data for a specific area and time period, set visualization parameters, and export the animation as a GIF file. This can provide valuable insights into land use and environmental changes over time, which can be used for monitoring, analysis, and public education purposes. The resulting timelapse animation is a dynamic and engaging way to show environmental changes and human impacts on the planet. </p>
 <br>
-  <img src = " https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Google_Earth_Engine/output_files/Aral_sea_ts.gif?raw=true" alt="">   
+  <img src = " https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Google_Earth_Engine/output_files/Aral_sea_ts.gif?raw=true" >   
   <br>
-  <img src = "https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Google_Earth_Engine/output_files/Denver_ts.gif?raw=true" alt="">
+  <img src = "https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Google_Earth_Engine/output_files/Denver_ts.gif?raw=true" >
 </ul>
 
 ## 4  <a href = "https://github.com/gangaraju09/GeoSpatial_BigData/tree/main/Network_Analysis">  Network Analysis</a>
@@ -66,11 +66,11 @@ In this project, I applied network analysis techniques to Madison, Wisconsin. In
 
 The analysis using Moran's I revealed hotspots with a high concentration of wasted votes in certain regions of Madison, indicating a strong spatial autocorrelation. On the other hand, coldspots showed a weak spatial correlation of wasted votes. Additionally, the GWR results demonstrated that the relationship between wasted votes and key predictors, such as race and education, varied geographically, indicating the need for targeted strategies to address this issue in specific areas. This information can be useful for improving the efficiency and fairness of the election process in Madison, WI.
 
-<img src = "https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Spatial_Autocorrelation_and_Regression/images/Coldspots.png?raw=true" alt="">
+<img src = "https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Spatial_Autocorrelation_and_Regression/images/Coldspots.png?raw=true" >
 
 Here I took Airbnb raw data and analysed the Airbnb median price variation in Austin, Texas based on mean bedrooms and review score values was generated using Geographic Weighted Regression (GWR). GWR is a spatial regression technique that allows the relationship between variables to vary geographically, enabling the identification of local variations in the relationship between the variables of interest. The snapshot reveals the median price variation of Airbnb listings in different areas of Austin, Texas, highlighting the impact of mean bedrooms and review score values on the pricing of Airbnb listings. This information can be useful for both hosts and guests in making informed decisions regarding pricing and rental choices in Austin, Texas.
 
-<img src = "https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Spatial_Autocorrelation_and_Regression/images/GWR.png?raw=true" alt="">
+<img src = "https://github.com/gangaraju09/GeoSpatial_BigData/blob/main/Spatial_Autocorrelation_and_Regression/images/GWR.png?raw=true" >
 
 </ul>
   </p> 
